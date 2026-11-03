@@ -71,10 +71,10 @@ Create a `.env` file in the project root:
 GROQ_API_KEY=your_groq_api_key
 TRIAGE_ADMIN_USERNAME=admin
 TRIAGE_ADMIN_PASSWORD=replace-with-a-unique-password-of-at-least-12-characters
-GROQ_FALLBACK_MODEL=openai/gpt-oss-120b
+GROQ_FALLBACK_MODEL=llama-3.3-70b-versatile
 ```
 
-The primary model is `openai/gpt-oss-20b`; the fallback defaults to `openai/gpt-oss-120b`. Both require access through the same Groq API key. Choose a fallback model enabled for your account.
+The primary model is `openai/gpt-oss-20b`; the fallback defaults to `llama-3.3-70b-versatile`. Both require access through the same Groq API key. Choose a fallback model enabled for your account.
 
 Start the dashboard:
 

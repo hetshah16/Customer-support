@@ -17,8 +17,8 @@ def get_model(tools: list = []) -> BaseChatModel:
 
 def get_fallback_model(tools: list = []) -> BaseChatModel:
     """Return a separate Groq model used after primary-model failures."""
-    model = os.environ.get("GROQ_FALLBACK_MODEL", "openai/gpt-oss-120b").strip()
-    model = model or "openai/gpt-oss-120b"
+    model = os.environ.get("GROQ_FALLBACK_MODEL", "llama-3.3-70b-versatile").strip()
+    model = model or "llama-3.3-70b-versatile"
     if model == "openai/gpt-oss-20b":
         raise ValueError("GROQ_FALLBACK_MODEL must differ from the primary model.")
     print(f"[MODEL_INIT] -> Loading Groq ({model}) as fallback.")
